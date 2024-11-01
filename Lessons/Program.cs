@@ -1,7 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Lessons;
 
-
+var person = new Person();
+person.SetBirthdate(new DateTime(1982, 1, 2));
+DateTime dateTime = person.GetBirthdate();
+System.Console.WriteLine(dateTime);
 
 
 static void FieldsDemo()
