@@ -1,8 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Lessons;
 
-var person = new Person(new DateTime(1982, 1, 1));
-System.Console.WriteLine(person.Age);
+
 
 
 static void FieldsDemo()
@@ -17,5 +16,6 @@ static void FieldsDemo()
 }
 static void PropertiesDemo()
 {
-
+    var person = new Person(new DateTime(1982, 1, 1));
+    System.Console.WriteLine(person.Age);
 }
