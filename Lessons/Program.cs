@@ -1,6 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Lessons;
 
+var cookie = new HttpCookie();
+cookie["name"] = "Mosh";
+System.Console.WriteLine(cookie["name"]);
 
 
 
