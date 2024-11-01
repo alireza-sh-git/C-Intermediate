@@ -1,0 +1,6 @@
+bin/
+obj/
+Lessons.sln
+Lessons.csproj
+.vscode/
+

@@ -1,0 +1,7 @@
+namespace Lessons
+{
+    class Order
+    {
+
+    }
+}
