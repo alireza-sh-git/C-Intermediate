@@ -2,33 +2,7 @@
 using System.Runtime.InteropServices;
 using Lessons;
 
-Stopwatch stopwatch = new Stopwatch();
 
-while (true)
-{
-#pragma warning disable CS8602 // Dereference of a possibly null reference.
-    string input = Console.ReadLine().ToLower().Trim();
-#pragma warning restore CS8602 // Dereference of a possibly null reference.
-    if (input == "start")
-    {
-        if (stopwatch.IsRunning) System.Console.WriteLine("The stopwatch is already running");
-        else stopwatch.Start();
-
-    }
-
-    else if (input == "stop")
-    {
-        if (stopwatch.IsRunning) stopwatch.Stop();
-        else System.Console.WriteLine("You need to start the stopwatch first.");
-    }
-
-    else if (input == "display")
-    {
-        if (stopwatch.IsRunning) System.Console.WriteLine("You need to stop the stopwatch first.");
-        else System.Console.WriteLine(stopwatch.Display());
-    }
-    else System.Console.WriteLine("invalid input");
-}
 
 
 
@@ -53,3 +27,45 @@ while (true)
 //     cookie["name"] = "Mosh";
 //     System.Console.WriteLine(cookie["name"]);
 // }
+// static void StopwatchExercise()
+// {
+//     Stopwatch stopwatch = new Stopwatch();
+
+//     while (true)
+//     {
+// #pragma warning disable CS8602 // Dereference of a possibly null reference.
+//         string input = Console.ReadLine().ToLower().Trim();
+// #pragma warning restore CS8602 // Dereference of a possibly null reference.
+//         if (input == "start")
+//         {
+//             if (stopwatch.IsRunning) System.Console.WriteLine("The stopwatch is already running");
+//             else stopwatch.Start();
+
+//         }
+
+//         else if (input == "stop")
+//         {
+//             if (stopwatch.IsRunning) stopwatch.Stop();
+//             else System.Console.WriteLine("You need to start the stopwatch first.");
+//         }
+
+//         else if (input == "display")
+//         {
+//             if (stopwatch.IsRunning) System.Console.WriteLine("You need to stop the stopwatch first.");
+//             else System.Console.WriteLine(stopwatch.Display());
+//         }
+//         else System.Console.WriteLine("invalid input");
+//     }
+// // }
+
+// static void OverflowPost()
+// {
+//     var post = new StackPost("C#", "I have been learning c# for 2 weeks, its the best");
+//     post.Upvote();
+//     post.Upvote();
+//     post.Upvote();
+//     post.Upvote();
+//     post.Downvote();
+//     System.Console.WriteLine(post.Vote);
+// }
+
