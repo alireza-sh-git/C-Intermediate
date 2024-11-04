@@ -2,6 +2,13 @@
 using System.Runtime.InteropServices;
 using Lessons;
 
+Stack stack = new Stack();
+stack.Push("Yellow");
+stack.Push(2);
+stack.Push(new int[] { 1, 2, 3, 4 });
+System.Console.WriteLine(stack.Pop());
+System.Console.WriteLine(stack.Pop());
+System.Console.WriteLine(stack.Pop());
 
 
 
