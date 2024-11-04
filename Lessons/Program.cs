@@ -2,13 +2,36 @@
 using System.Runtime.InteropServices;
 using Lessons;
 
-Stack stack = new Stack();
-stack.Push("Yellow");
-stack.Push(2);
-stack.Push(new int[] { 1, 2, 3, 4 });
-System.Console.WriteLine(stack.Pop());
-System.Console.WriteLine(stack.Pop());
-System.Console.WriteLine(stack.Pop());
+
+var sqlConnection = new SqlConnection("asdf");
+var oracleConnection = new OracleConnection("1234");
+sqlConnection.OpenConnection();
+sqlConnection.CloseConnection();
+oracleConnection.OpenConnection();
+oracleConnection.CloseConnection();
+
+var dbCommand = new DbCommand(oracleConnection, "Add new table");
+dbCommand.Execute();
+
+
+
+
+
+
+
+
+
+// static void StackExercise()
+// {
+//     Stack stack = new Stack();
+//     stack.Push("Yellow");
+//     stack.Push(2);
+//     stack.Push(new int[] { 1, 2, 3, 4 });
+//     System.Console.WriteLine(stack.Pop());
+//     System.Console.WriteLine(stack.Pop());
+//     System.Console.WriteLine(stack.Pop());
+
+// }
 
 
 
